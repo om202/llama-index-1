@@ -10,12 +10,11 @@ from llama_index.core import (
     load_index_from_storage,
     Settings
 )
-from llama_index.core.memory import ChatMemoryBuffer
+from llama_index.core.memory.chat_memory_buffer import ChatMemoryBuffer
 
 
-Settings.embed_model = resolve_embed_model("local:BAAI/bge-small-en-v1.5")
-Settings.llm = OpenAI(model='gpt-3.5-turbo')
-memory = ChatMemoryBuffer(token_limit=1500)
+llm = OpenAI(model='gpt-4')
+memory = ChatMemoryBuffer(token_limit=3000)
 
 try: 
     storage_context = StorageContext.from_defaults(persist_dir='./storage/bj')
@@ -31,11 +30,13 @@ if not index_loaded:
 
 # bj_engine = bj_index.as_query_engine(similarity_top_k=3, streaming=True)
 bj_engine = bj_index.as_chat_engine(
-    chat_mode="condense_plus_context",
+    chat_mode="context",
     memory=memory,
+    llm=llm,
     context_prompt=(
-        "You are a very polite server. Start the conversation by saying: Welcome to BJ Restaurant. How can I help you?. You know all menu items and their price. You are good at maths and can calculate the total price."
+        "You are a server at Colorado Curry Indian Restaurant. You act polite and are always ready to assist customers with their needs. When cusomter say Hi, you say Welcome to Colorado Curry."
     ),
+    verbose=False,
 )
 
 os.system('clear')
@@ -43,6 +44,8 @@ os.system('clear')
 while True:
     q = input('\n\nask > ')
     response = bj_engine.chat(q)
-    print(response.response)
+    print(response)
+    # r = bj_engine.query(q)
+    # r.print_response_stream()
     if q == '/q':
         break
