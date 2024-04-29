@@ -1,0 +1,226 @@
+{
+  "restaurant": {
+    "name": "Nepal’s Kitchen",
+    "type": "Indian Restaurant and bar",
+    "description": "We serve Indian, Nepali, and Tibetan traditional dinner.",
+    "hours": "4 PM to 9 PM",
+    "ingredients": "All dishes are prepared using fresh and local ingredients.",
+    "location": "903 Mountain Ave, Berthoud, Colorado 80513",
+    "note": "We are located inside the Grandpa Café."
+  },
+  "menu": {
+    "appetizers": [
+      {
+        "name": "Samosa",
+        "description": "Crispy pastry with vegetable and spices, deep fried",
+        "quantity": "2pcs",
+        "price": 6
+      },
+      {
+        "name": "Onion rings",
+        "description": "Onions rings fried in chickpea flour and butter",
+        "price": 6
+      },
+      {
+        "name": "Papdum",
+        "description": "Thin crispy bread deep fried, served with sauce",
+        "quantity": "4 pcs",
+        "price": 5
+      }
+    ],
+    "soup_and_salad": [
+      {
+        "name": "Dal soup",
+        "description": "Lentil soup with spices and herbs",
+        "sizes": {
+          "cup": 6,
+          "family": 12
+        },
+        "feed_info": "Feed up to 2-4 adults"
+      },
+      {
+        "name": "Chicken soup",
+        "description": "Tender pieces of chicken with herbs and spices",
+        "sizes": {
+          "cup": 6,
+          "family": 12
+        },
+        "feed_info": "Feed up to 2-4 adults"
+      },
+      {
+        "name": "Tomato soup",
+        "description": "Tomato soup with herbs and spices",
+        "sizes": {
+          "cup": 6,
+          "family": 12
+        },
+        "feed_info": "Feed up to 2-4 adults"
+      },
+      {
+        "name": "Green salad",
+        "description": "diced cucumbers, bell peppers, lettuce, tomato, and carrots in yogurt dressing",
+        "price": 5
+      }
+    ],
+    "breads": [
+      {
+        "name": "Naan",
+        "description": "Famous Indian bread made of fine flour",
+        "price": 3
+      },
+      {
+        "name": "Garlic Naan",
+        "description": "Naan baked with garlic",
+        "price": 3.5
+      },
+      {
+        "name": "Roti",
+        "description": "Traditional Indian wheat bread",
+        "price": 3
+      }
+    ],
+    "entrees": [
+      {
+        "type": "curries",
+        "description": "Traditional dish of India, cooked in medium thick gravy blend of spices, onion, garlic, and tomato",
+        "items": [
+          {"name": "Chicken Curry", "price": 15},
+          {"name": "Chicken tika curry (white meat)", "price": 16},
+          {"name": "Lamb curry", "price": 16},
+          {"name": "Shrimp curry", "price": 17},
+          {"name": "Combination Curry (chicken, lamb, and shrimp)", "price": 17}
+        ]
+      },
+      {
+        "type": "masala",
+        "description": "Cooked in oven then prepared with a creamy, flavorful sauce",
+        "items": [
+          {"name": "Chicken tika masala", "price": 18},
+          {"name": "Lamb masala", "price": 18},
+          {"name": "Shrimp masala", "price": 18},
+          {"name": "Combination masala (Chicken, lamb, and shrimp)", "price": 19}
+        ]
+      },
+      {
+        "type": "korma",
+        "description": "Marinated pieces of meat, cooked with onion, whipped cream, coconut milk and nuts",
+        "items": [
+          {"name": "Chicken Korma", "price": 17},
+          {"name": "Chicken tika korma (white meat)", "price": 18},
+          {"name": "Lamb korma", "price": 18},
+          {"name": "Shrimp korma", "price": 18},
+          {"name": "Combination Korma (Chicken, lamb, and shrimp)", "price": 19}
+        ]
+      },
+      {
+        "type": "bhuna",
+        "description": "Boneless meat cooked with fried onion, bell pepper red chili and tomato sauce",
+        "items": [
+          {"name": "Chicken bhuna", "price": 16},
+          {"name": "Chicken tika bhuna", "price": 17},
+          {"name": "Lamb bhuna", "price": 18},
+          {"name": "Shrimp bhuna", "price": 18},
+          {"name": "Combination bhuna (chicken, lamb, shrimp)", "price": 18}
+        ]
+      },
+      {
+        "type": "saag",
+        "description": "Boneless meat cooked with chopped Spinach, whipped cream, herbs, and spices",
+        "items": [
+          {"name": "Chicken saag", "price": 16},
+          {"name": "Chicken tika saag", "price": 17},
+          {"name": "Lamb saag", "price": 18},
+          {"name": "Shrimp saag", "price": 18}
+        ]
+      },
+      {
+        "type": "vindaloo",
+        "description": "Boneless meat cooked with chopped fried potatoes and medium thick onion gravy",
+        "items": [
+          {"name": "Chicken vindaloo", "price": 16},
+          {"name": "Chicken tika vindaloo", "price": 17},
+          {"name": "Lamb vindaloo", "price": 17},
+          {"name": "Shrimp vindaloo", "price": 17},
+          {"name": "Combination vindaloo", "price": 18}
+        ]
+      },
+      {
+        "type": "special_entree",
+        "description": "Boneless chicken cooked in oven and chopped with tomatoes and flavorful sauce",
+        "items": [
+          {"name": "Chicken makhana (butter chicken)", "price": 18}
+        ]
+      },
+      {
+        "type": "biriyani",
+        "description": "Basmati rice from India cooked with meat or vegetable along with blend of spices. It is served with raita.",
+        "items": [
+          {"name": "Vegetable biriyani", "price": 13},
+          {"name": "Chicken biriyani", "price": 14},
+          {"name": "Lamb biriyani", "price": 15},
+          {"name": "Shrimp biriyani", "price": 15},
+          {"name": "Combination biriyani", "price": 16}
+        ]
+      },
+      {
+        "type": "vegetable_special",
+        "description": "A variety of vegetable dishes cooked in flavorful sauces and gravies",
+        "items": [
+          {"name": "Saag paneer", "description": "Spinach cooked with homemade cheese with cream", "price": 14},
+          {"name": "Vegetable curry", "description": "Mixed vegetable cooked with medium thick gravy", "price": 15},
+          {"name": "Vegetable korma", "description": "Mixed vegetable cooked with whipped cream and nuts", "price": 15},
+          {"name": "Mushroom mutter", "description": "Mushroom cooked with flavorful gravy and peas", "price": 15},
+          {"name": "Alu gobhi", "description": "Cauliflower and potatoes cooked with herb and spices", "price": 14},
+          {"name": "Alu matter", "description": "Peas and potatoes cooked with gravy", "price": 14},
+          {"name": "Matter paneer", "description": "Green peas with homemade cheese in mild gravy", "price": 15}
+        ]
+      }
+    ],
+    "drinks": [
+      {
+        "name": "Chai",
+        "price": 3.5
+      },
+      {
+        "name": "Mango lassi",
+        "price": 4.5
+      },
+      {
+        "name": "Banana lassi",
+        "price": 4.5
+      },
+      {
+        "name": "Strawberry lassi",
+        "price": 4.5
+      }
+    ],
+    "iced_beverages": [
+      {
+        "name": "Pepsi, Diet Pepsi, Lemonade, Mountain Dew, Sierra Mist and Dr. Pepper",
+        "price": 3.5
+      },
+      {
+        "name": "Iced tea (sweet or unsweet)",
+        "price": 3.5
+      },
+      {
+        "name": "Ice chai",
+        "price": 3.5
+      }
+    ],
+    "desserts": [
+      {
+        "name": "Ice cream",
+        "price": 4.5
+      },
+      {
+        "name": "Ras malai",
+        "price": 4.5
+      },
+      {
+        "name": "Fried pie with ice cream",
+        "price": 5.5
+      }
+    ]
+  }
+}
